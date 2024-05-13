@@ -21,6 +21,7 @@ export class King extends Figure {
         // Проверяем, что разница в координатах не превышает 1 по вертикали или горизонтали
         if (dx <= 1 && dy <= 1) {
             // Проверяем, что целевая ячейка либо пуста, либо занята фигурой противника
+            
             if (target.isEmpty() || this.cell.isEnemy(target)) {
                 return true;
             }
